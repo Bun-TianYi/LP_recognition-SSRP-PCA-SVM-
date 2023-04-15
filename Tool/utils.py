@@ -123,7 +123,6 @@ def my_PCA(x, n_compose, isfeature=False):
 def zero_resize(mat, new_width, new_height):
     # 这个函数仅接受传进来一个二维矩阵，若是三维矩阵请使用拼接技术完成相关工作
     if len(mat.shape) == 3:
-        temp = zero_resize(mat[:, :, 0], new_width, new_height)
         img = np.array([zero_resize(mat[:, :, 0], new_width, new_height),
                   zero_resize(mat[:, :, 1], new_width, new_height),
                   zero_resize(mat[:, :, 2], new_width, new_height)])

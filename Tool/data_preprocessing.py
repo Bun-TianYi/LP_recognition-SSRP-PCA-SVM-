@@ -105,7 +105,7 @@ for item in range(1500):
     #     rect_dict_temp = json.dumps(rect_dict)
     #     f.write(rect_dict_temp)
 
-with open('../rect_dict.json', 'w') as f:
+with open('./rect_dict.json', 'w') as f:
     rect_dict = json.dumps(rect_dict)
     f.write(rect_dict)
 
